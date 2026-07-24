@@ -1,13 +1,13 @@
 # Awesome Marketing Skills
 
-> A curated list of awesome marketing skills, resources, and tools for getting marketing, copy, and distribution done through any LLM - Claude, ChatGPT, Manus, Codex, and similar agents.
+> A curated list of skills, resources, and tools for getting real marketing work done through an LLM agent: copy, SEO, campaigns, social, and distribution in Claude, ChatGPT, Manus, Codex, and anything else that can read a skill.
 
 [![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/sindresorhus/awesome)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Link check](https://github.com/mikiarlo3/awesome-marketing-skills/actions/workflows/link-check.yml/badge.svg)](https://github.com/mikiarlo3/awesome-marketing-skills/actions/workflows/link-check.yml)
 
-**This is a selective catalog, not a directory dump.** Every listed entry has a canonical source, a clear marketing use case, and an explicit note about portability or external side effects. A `SKILL.md` package may be portable across Agent Skills-compatible hosts, but a host-specific plugin, MCP connector, installer, or script bundle must be assessed separately.[11] [12] [13] [14]
+Most lists like this are link dumps. This one is short on purpose. Every entry links its original source, does a job a working marketer actually has, and says up front whether it can touch the outside world. A plain `SKILL.md` folder usually travels well between Agent Skills-compatible hosts; a host-specific plugin, MCP connector, installer, or script bundle needs its own look before you trust it.[11] [12] [13] [14]
 
 ## Contents
 
@@ -27,7 +27,7 @@
 
 ## Start here
 
-If you want a practical default stack, start with **Marketing Skills for AI Agents** for broad strategy, copy, SEO, CRO, analytics, and growth work. Add **AI Copywriter** for a portable, focused copy workflow, then add **Social Media Skills** or **Claude Blog** only when you need channel-specific production. Use a connector-heavy package only after you understand what it can read, write, send, publish, or schedule.[2] [3] [5] [6]
+You do not need ten of these. Install **Marketing Skills for AI Agents** first; it covers strategy, copy, SEO, CRO, analytics, and growth, and it will carry most of your week. Add **AI Copywriter** when you want a lighter, portable copy workflow, then reach for **Social Media Skills** or **Claude Blog** once a specific channel becomes the bottleneck. Save the connector-heavy packages for later, after you know exactly what they can read, write, send, publish, or schedule on your behalf.[2] [3] [5] [6]
 
 | Need | Recommended starting point | Why it is useful |
 |---|---|---|
@@ -40,15 +40,15 @@ If you want a practical default stack, start with **Marketing Skills for AI Agen
 
 ## Install safely
 
-> **Read the complete skill folder before you install it.** A skill is not always just Markdown: it can include scripts, assets, APIs, MCP configurations, credentials, web access, telemetry, or publication tools. Manus explicitly warns that community skills can contain code and shell commands, while the Agent Skills standard permits optional scripts, references, and assets.[11] [14]
+> **Read the whole skill folder before you install it.** A skill is not always just Markdown. It can ship scripts, assets, API calls, MCP configuration, credential requests, web access, telemetry, or publishing tools. Manus warns outright that community skills can contain code and shell commands, and the Agent Skills standard allows optional scripts, references, and assets.[11] [14]
 
-Use the following sequence before activating a new package:
+Before you activate anything new:
 
-1. **Verify the canonical source.** Prefer the project linked from this list rather than a fork, mirror, or repost.
-2. **Read `SKILL.md`, installation files, scripts, and configuration.** Do not run `curl | bash` installers or grant credentials until you understand their scope.
-3. **Install the smallest useful unit.** Prefer one skill over a full bundle, especially when it includes sending, publishing, advertising, CRM, or browser automation.
-4. **Start in a non-production workspace.** Use sample or non-sensitive data first, and confirm that outputs match your brand and factual standards.
-5. **Keep external actions human-approved.** Publishing, sending messages, changing ad spend, importing contacts, and modifying CRM records should require a deliberate review step.
+1. **Verify the canonical source.** Install from the project linked here, not from a fork, mirror, or repost.
+2. **Read `SKILL.md`, the installers, the scripts, and the configuration.** Never run a `curl | bash` installer or hand over credentials before you know what they reach.
+3. **Install the smallest useful unit.** One skill beats a full bundle, especially when the bundle can send, publish, advertise, edit a CRM, or drive a browser.
+4. **Start in a non-production workspace.** Feed it sample or non-sensitive data first, and check the output against your brand and your facts.
+5. **Keep external actions human-approved.** Publishing, sending messages, changing ad spend, importing contacts, and editing CRM records deserve a deliberate review step, every time.
 
 ### Compatibility at a glance
 
@@ -105,7 +105,7 @@ Use the following sequence before activating a new package:
 
 ### Advanced automation
 
-These packages are worthwhile for experienced technical marketers, but they are **not** default installations because they can use API keys, ingest business data, send messages, publish posts, modify records, or automate multi-step operations.
+These earn their place, but they are for technical marketers who already think in terms of least privilege. Do not install them by default: they can hold API keys, ingest business data, send messages, publish posts, modify records, and chain multi-step operations without a person in between.
 
 | Project | Why it is here | Why it needs additional review |
 |---|---|---|
@@ -126,9 +126,9 @@ These packages are worthwhile for experienced technical marketers, but they are 
 
 ## Help make this list better
 
-**Contributions are welcome.** The list gets better when practitioners add a real skill they have tested, report an unsafe installer, correct a stale compatibility claim, or explain a concrete marketing workflow that an LLM can perform well.
+The best contributions come from people who tried something. Add a skill you have actually run, report an installer that made you nervous, fix a compatibility claim that went stale, or describe a concrete marketing workflow an LLM does well.
 
-A strong contribution is specific. It identifies the canonical source, says what the skill actually helps a marketer do, names the packaging format and documented host(s), and calls out scripts, credentials, MCP connections, live publishing, or other side effects. Please do not submit a generic prompt collection, a cloned duplicate, a paywalled tool without a meaningful skill layer, or a project that encourages spam, deception, fake engagement, or unauthorized scraping.
+A strong entry is specific: it links the canonical source, says what the skill helps a marketer do, names the packaging format and its documented hosts, and admits to any scripts, credentials, MCP connections, or live publishing. What we turn away: generic prompt collections, cloned duplicates, paywalled tools without a real skill layer, and anything built for spam, fake engagement, deceptive reviews, or unauthorized scraping.
 
 ### Fast contribution path
 
@@ -139,15 +139,15 @@ A strong contribution is specific. It identifies the canonical source, says what
 5. Run `git diff --check`, make sure links work, and open a pull request using the repository template.
 6. In the pull request description, state whether you personally tested the skill, on which host, and whether it read data, wrote data, sent messages, published content, used paid APIs, or required credentials.
 
-If you have a promising project but need help deciding where it belongs, open a [new entry request](.github/ISSUE_TEMPLATE/new-entry.md). Small documentation fixes and safety corrections are especially welcome.
+Not sure where a project fits? Open a [new entry request](.github/ISSUE_TEMPLATE/new-entry.md) and we will sort it out together. Small documentation fixes and safety corrections are always welcome, and they tend to merge fastest.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete standard.
 
 ## Safety and responsible use
 
-This repository links to third-party packages and does **not** execute, audit, endorse, or guarantee them. Marketing agents should preserve human accountability for factual claims, brand voice, consent, privacy, deliverability, advertising rules, and customer data. Keep a reviewer in the loop for anything that sends, posts, purchases, changes budgets, creates public content, writes to a CRM, or processes personal information.
+This repository links to third-party packages. We do **not** run, audit, endorse, or guarantee any of them. However capable the agent, a person stays accountable for factual claims, brand voice, consent, privacy, deliverability, advertising rules, and customer data. Keep a reviewer in the loop for anything that sends, posts, purchases, changes a budget, creates public content, writes to a CRM, or processes personal information.
 
-> A marketing skill should make good work faster, not make irresponsible automation easier.
+> The point of a skill is to make good work faster. If it only saves time by taking the reviewer out of the loop, it does not belong here.
 
 ## References
 
